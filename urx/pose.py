@@ -1,6 +1,14 @@
 import numpy as np
 import math
+
+
 class RobotPose():
+    @classmethod
+    def ReadyPose(cls):
+        p = cls()
+        p.pose = np.array([-0.5, 0, 0.35, 0, -math.pi, 0])
+        return p
+
     def __init__(self):
         self.pose = np.zeros(6)
         self.joint_pose = np.zeros(6)
