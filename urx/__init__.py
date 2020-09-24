@@ -7,6 +7,7 @@ __version__ = "0.11.0"
 
 try:
     from urx.robot import Robot
+    from urx.pose import RobotPose
 except ImportError as ex:
     print("Exception while importing math3d base robot, disabling use of matrices", ex)
     Robot = URRobot

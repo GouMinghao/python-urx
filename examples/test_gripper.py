@@ -15,7 +15,9 @@ if(sys.argv[1] == "close") :
 if(sys.argv[1] == "open") :
     robotiqgrip.open_gripper()
 
-for i in range(25):
-    print(i)
-    robotiqgrip.gripper_action(i  * 10)
-    time.sleep(0.01)
+# for i in range(25):
+#     print(i)
+#     robotiqgrip.gripper_action(i  * 10)
+#     time.sleep(0.01)
+
+rob.close()
